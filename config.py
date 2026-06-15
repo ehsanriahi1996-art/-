@@ -1,0 +1,27 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
+# Bot States
+(
+    REGISTER_ROLE,
+    REGISTER_NAME,
+    REGISTER_SKILLS,
+    REGISTER_BIO,
+    PROJECT_TITLE,
+    PROJECT_DESC,
+    PROJECT_BUDGET_MIN,
+    PROJECT_BUDGET_MAX,
+    PROJECT_DEADLINE,
+    PROPOSAL_PRICE,
+    PROPOSAL_TIME,
+    PROPOSAL_DESC,
+    CHAT_MESSAGE,
+    RATING_SCORE,
+    RATING_COMMENT,
+) = range(15)
